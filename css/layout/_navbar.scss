@@ -1,3 +1,10 @@
-@import '/css/base/fonts';
-@import '/css/base/colors';
+@use '/css/base/fonts';
+@use '/css/base/colors';
 
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background-color: $primary;
+    font-size: 25px;
+}
