@@ -1,49 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="icon" href="./assets/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://dhushandhansd.github.io/flipkart/css/main.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./script/carousel.js" defer></script>
+    <link rel="icon" href="./assets/favicon.png" />
     <title>Flipkart - UKSD</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-container">
-        <div class="navbar-container">
-            <div class="navbar-content">
-                <div class="logo">
-                    <img src="./assets/logo.png" alt="logo">
-                    <div class="explore-text">
-                        <p>Explore</p>
-                        <span>Plus</span>
-                        <img src="./assets/plus-img.png" alt="plus">
-                    </div>
-                </div>
-                <div class="search-container">
-                    <input type="text" placeholder="Search for products, brands and more">
-                    <img src="./assets/search-icon.svg" alt="search">
-                </div>
-                <div class="login">
-                   Login
-                </div>
-                <div class="more">
-                    More
-                    <img src="./assets/arrow.svg" alt="arrow">
-                 </div>
-                 <div class="cart">
-                    <img src="./assets/cart-img.svg" alt="cart">
-                    Cart
-                 </div>
+      <div class="navbar-container">
+        <div class="navbar-content">
+          <div class="logo">
+            <img src="./assets/logo.png" alt="logo" />
+            <div class="explore-text">
+              <p>Explore</p>
+              <span>Plus</span>
+              <img src="./assets/plus-img.png" alt="plus" />
             </div>
+          </div>
+          <div class="search-container">
+            <input
+              type="text"
+              placeholder="Search for products, brands and more"
+            />
+            <img src="./assets/search-icon.svg" alt="search" />
+          </div>
+          <div class="login">Login</div>
+          <div class="more">
+            More
+            <img src="./assets/arrow.svg" alt="arrow" />
+          </div>
+          <div class="cart">
+            <img src="./assets/cart-img.svg" alt="cart" />
+            Cart
+          </div>
         </div>
-        <div class="topics-container">
-            <div class="topics-content">
-                <div class="topic">
-                    <img src="./assets/topics/offers.png" alt="offers">
-                </div>
-            </div>
+      </div>
+
+      <div class="topics-container">
+        <div class="topics-content">
+          <div class="topic">
+            <img src="./assets/topics/offers.png" alt="offers" />
+            <h5>Top Offers</h5>
+          </div>
         </div>
+        <div class="topics-content">
+          <div class="topic">
+            <img src="./assets/topics/grocery.png" alt="grocery" />
+            <h5>Grocery</h5>
+          </div>
+        </div>
+        <div class="topics-content">
+          <div class="topic">
+            <img src="./assets/topics/mobiles.png" alt="mobile" />
+            <h5>Mobiles</h5>
+          </div>
+        </div>
+        <div class="topics-content">
+          <div class="topic">
+            <img src="./assets/topics/fashion.png" alt="fashion" />
+            <h5>Fashion</h5>
+          </div>
+        </div>
+        <div class="topics-content">
+          <div class="topic">
+            <img src="./assets/topics/electronics.png" alt="electronics" />
+            <h5>Electronics</h5>
+          </div>
+        </div>
+        <div class="topics-content topic-content-small">
+          <div class="topic">
+            <img src="./assets/topics/home.jpg" alt="home" />
+            <h5>Home</h5>
+          </div>
+        </div>
+        <div class="topics-content">
+          <div class="topic">
+            <img src="./assets/topics/appliances.png" alt="appliances" />
+            <h5>Appliances</h5>
+          </div>
+        </div>
+        <div class="topics-content topic-content-small">
+          <div class="topic topic-large">
+            <img src="./assets/topics/travel.png" alt="travel" />
+            <h5>Travel</h5>
+          </div>
+        </div>
+        <div class="topics-content topic-content-large">
+          <div class="topic topic-large">
+            <img src="./assets/topics/toys.png" alt="more" />
+            <h5>Beauty, Toys & more</h5>
+          </div>
+        </div>
+      </div>
+
+      <div onload="carousel()" class="carousel-container">
+
+        <div id="slides" class="slides">
+          <img src="./assets/carousal/carousal1.jpg" alt="slide1" />
+        </div>
+
+        <div id="slides" class="slides slides-normal">
+          <img src="./assets/carousal/carousal2.jpg" alt="slide2" />
+        </div>
+
+        <div id="slides" class="slides">
+          <img src="./assets/carousal/carousal3.jpg" alt="slide3" />
+        </div>
+
+        <div id="slides" class="slides">
+            <img src="./assets/carousal/carousal4.jpg" alt="slide4">
+        </div>
+
+        <div id="slides" class="slides">
+            <img src="./assets/carousal/carousal5.jpg" alt="slide5">
+        </div>
+
+
+      </div>
     </div>
-</body>
+  </body>
 </html>
