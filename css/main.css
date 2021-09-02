@@ -6,6 +6,20 @@
   font-family: 'Roboto', sans-serif;
 }
 
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  overflow-x: hidden;
+}
+
+.main-container {
+  background-color: #f1f3f6;
+}
+
 .navbar-container {
   width: 100%;
   position: fixed;
@@ -18,6 +32,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 .navbar-container .navbar-content {
@@ -208,6 +223,10 @@
           box-shadow: 0 0px 2px rgba(0, 0, 0, 0.589);
 }
 
+.topics-container .topics-content {
+  cursor: pointer;
+}
+
 .topics-container .topic-content-large {
   width: 200px;
 }
@@ -253,29 +272,449 @@
   font-weight: 500;
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Roboto', sans-serif;
+.fashion-container {
+  width: 98.5%;
+  height: 361px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.445);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.445);
 }
 
-.main-container {
-  background-color: #f1f3f6;
+.fashion-container .fashion-header {
+  width: 100%;
+  -webkit-box-flex: .2;
+      -ms-flex: .2;
+          flex: .2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.fashion-container .fashion-header .fashion-title {
+  padding-left: 20px;
+}
+
+.fashion-container .fashion-header .fashion-title h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.fashion-container .fashion-header .view-all-container {
+  padding-right: 20px;
+}
+
+.fashion-container .fashion-header .view-all-container .view-all {
+  background-color: #2874f0;
+  width: 95px;
+  height: 38px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fashion-container .fashion-body {
+  -webkit-box-flex: .8;
+      -ms-flex: .8;
+          flex: .8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fashion-container .fashion-body .fashion-content {
+  width: 165px;
+  height: 90%;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fashion-container .fashion-body .fashion-content .fashion-image {
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.fashion-container .fashion-body .fashion-content .fashion-image:hover {
+  width: 160px;
+  height: 160px;
+}
+
+.fashion-container .fashion-body .fashion-content .fashion-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fashion-container .fashion-body .fashion-content .fashion-text .h5-bold {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.fashion-container .fashion-body .fashion-content .fashion-text .price {
+  opacity: 1;
+  color: #388e3c;
+}
+
+.fashion-container .fashion-body .fashion-content .fashion-text .desc {
+  font-size: 11.5px;
+}
+
+.fashion-container .fashion-body .fashion-content .fashion-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px;
+  opacity: .6;
+}
+
+.elect-container {
+  width: 98.5%;
+  height: 361px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.445);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.445);
+}
+
+.elect-container .elect-header {
+  width: 100%;
+  -webkit-box-flex: .2;
+      -ms-flex: .2;
+          flex: .2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.elect-container .elect-header .elect-title {
+  padding-left: 20px;
+}
+
+.elect-container .elect-header .elect-title h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.elect-container .elect-header .elect-title h5 {
+  font-weight: 500;
+  opacity: .4;
+}
+
+.elect-container .elect-header .view-all-container {
+  padding-right: 20px;
+}
+
+.elect-container .elect-header .view-all-container .view-all {
+  background-color: #2874f0;
+  width: 95px;
+  height: 38px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.elect-container .elect-body {
+  -webkit-box-flex: .8;
+      -ms-flex: .8;
+          flex: .8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.elect-container .elect-body .elect-content {
+  width: 165px;
+  height: 90%;
+  margin: 10px;
+}
+
+.elect-container .elect-body .elect-content .elect-image {
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.elect-container .elect-body .elect-content .elect-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.elect-container .elect-body .elect-content .elect-text .h5-bold {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.elect-container .elect-body .elect-content .elect-text .price {
+  opacity: 1;
+  color: #388e3c;
+}
+
+.elect-container .elect-body .elect-content .elect-text .desc {
+  font-size: 11.5px;
+}
+
+.elect-container .elect-body .elect-content .elect-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px;
+  opacity: .6;
+}
+
+.footer-container {
+  width: 100%;
+  height: 346px;
+  background-color: #172337;
+  margin-top: 10px;
+  overflow-x: hidden;
+}
+
+.footer-container .footer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 20px;
+}
+
+.footer-container .footer-header .address {
+  border-left: 1px solid rgba(255, 255, 255, 0.356);
+  padding-left: 30px;
+}
+
+.footer-container .footer-header .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+  font-weight: 400;
+  color: #878787;
+}
+
+.footer-container .footer-header .footer-content .top-a {
+  padding-top: 10px;
+}
+
+.footer-container .footer-header .footer-content a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  line-height: 2;
+}
+
+.footer-container .footer-header .footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-container .footer-header .footer-content .address-body {
+  padding-top: 10px;
+  color: #fff;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.footer-container .footer-header .footer-content .address-body span {
+  color: #2455f4;
+}
+
+.footer-container .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 5%;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.274);
+  color: #fff;
+}
+
+.footer-container .footer-bottom .sell-flipkart span {
+  opacity: 1;
+  font-size: 14px;
+}
+
+.footer-container .footer-bottom .sell-flipkart img {
+  opacity: 1;
+  padding-right: 5px;
+}
+
+.footer-container .footer-bottom .advertise-flipkart span {
+  font-size: 14px;
+}
+
+.footer-container .footer-bottom .advertise-flipkart img {
+  padding-right: 5px;
+}
+
+.footer-container .footer-bottom .gift-flipkart span {
+  font-size: 14px;
+}
+
+.footer-container .footer-bottom .gift-flipkart img {
+  padding-right: 5px;
+}
+
+.footer-container .footer-bottom .help-flipkart span {
+  font-size: 14px;
+}
+
+.footer-container .footer-bottom .help-flipkart img {
+  padding-right: 5px;
+}
+
+.footer-container .footer-bottom .copyrights span {
+  font-size: 14px;
+}
+
+.footer-container .footer-bottom .copyrights img {
+  padding-right: 5px;
+}
+
+.footer-container .footer-bottom .payment-flipkart span {
+  font-size: 14px;
+}
+
+.footer-container .footer-bottom .payment-flipkart img {
+  padding-right: 5px;
 }
 
 .carousel-container {
   width: 100%;
   height: 280px;
   display: block;
-  position: relative;
-  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px;
 }
 
 .carousel-container .slides-normal {
-  width: 100%;
+  width: 80%;
   height: 280px;
+}
+
+.carousel-container .slides {
+  width: 100%;
+  margin-right: 20px;
+  overflow-y: hidden;
+}
+
+.carousel-container .slides img {
+  height: 100%;
+  width: 123%;
 }
 /*# sourceMappingURL=main.css.map */

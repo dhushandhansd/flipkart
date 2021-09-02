@@ -1,7 +1,15 @@
+//Utilities//
 @import "./base/fonts";
 @import "./base/colors"; 
+
+
+//Layout//
+@import "./layout/mainContainer";
 @import "./layout/navbar";
 @import "./layout/topics";
-@import "./layout/mainContainer.scss";
+@import "./layout/fashion";
+@import "./layout/footer";
+
+// Components
 @import "./components/carousel";
 

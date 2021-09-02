@@ -1,6 +1,10 @@
 @import "../base/colors";
 @import "../base/fonts";
 
+* {
+    overflow-x: hidden;
+}
+
 .main-container {
     background-color: $base-bg;
 }

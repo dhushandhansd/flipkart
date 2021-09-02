@@ -1,0 +1,207 @@
+.fashion-container {
+    width: 98.5%;
+    height: 361px;
+    background-color: $white;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    box-shadow: 0 1px 6px $box-shadow;
+
+    .fashion-header {
+        width: 100%;
+        flex: .2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $border-color;
+
+        .fashion-title {
+            padding-left: 20px;
+            h4 {
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+
+        .view-all-container {
+            padding-right: 20px;
+
+            .view-all {
+                background-color: $primary;
+                width: 95px;
+                height: 38px;
+                color: $white;
+                font-size: 14px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .fashion-body {
+        flex: .8;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .fashion-content {
+            width: 165px;
+            height: 90%;
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+
+            .fashion-image {
+                width: 150px;
+                height: 150px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                object-fit: fill;
+            }
+
+            .fashion-image:hover {
+                width: 160px;
+                height: 160px;   
+            }
+    
+            .fashion-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .h5-bold {
+                    opacity: 1;
+                    font-weight: 500;
+                }
+    
+                .price {
+                    opacity: 1;
+                    color: $price-green;
+                }
+
+                .desc {
+                    font-size: 11.5px;
+                }
+    
+                h5 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding-top: 10px;
+                    opacity: .6;
+                }
+            }
+
+        }
+
+        
+    }
+}
+
+.elect-container {
+    width: 98.5%;
+    height: 361px;
+    background-color: $white;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    box-shadow: 0 1px 6px $box-shadow;
+
+    .elect-header {
+        width: 100%;
+        flex: .2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $border-color;
+
+        .elect-title {
+            padding-left: 20px;
+            h4 {
+                font-size: 22px;
+                font-weight: 500;
+            }
+
+            h5 {
+                font-weight: 500;
+                opacity: .4;
+            }
+        }
+
+        .view-all-container {
+            padding-right: 20px;
+
+            .view-all {
+                background-color: $primary;
+                width: 95px;
+                height: 38px;
+                color: $white;
+                font-size: 14px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .elect-body {
+        flex: .8;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        // overflow: scroll;
+
+        .elect-content {
+            width: 165px;
+            height: 90%;
+            margin: 10px;
+
+            .elect-image {
+                width: 150px;
+                height: 150px;
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+            }
+    
+            .elect-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .h5-bold {
+                    opacity: 1;
+                    font-weight: 500;
+                }
+    
+                .price {
+                    opacity: 1;
+                    color: $price-green;
+                }
+
+                .desc {
+                    font-size: 11.5px;
+                }
+    
+                h5 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding-top: 10px;
+                    opacity: .6;
+                }
+            }
+
+        }
+
+        
+    }
+}

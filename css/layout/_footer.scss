@@ -1,0 +1,125 @@
+.footer-container {
+  width: 100%;
+  height: 346px;
+  background-color: $footer-color;
+  margin-top: 10px;
+  overflow-x: hidden;
+
+  .footer-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    flex-direction: row;
+    padding-left: 20px;
+
+    .address {
+        border-left: 1px solid rgba(255, 255, 255, 0.356);
+        padding-left: 30px;
+    }
+
+    .footer-content {
+      display: flex;
+      padding-right: 5%;
+      flex-direction: column;
+      font-size: 12px;
+      font-weight: 400;
+      color: $footer-title;
+
+      .top-a {
+        padding-top: 10px;
+      }
+
+      a {
+        font-size: 12px;
+        font-weight: 400;
+        color: $white;
+        text-decoration: none;
+        line-height: 2;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .address-body {
+        padding-top: 10px;
+        color: $white;
+        line-height: 1.5;
+        white-space: nowrap;
+
+        span {
+          color: $phone-blue;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    padding-top: 20px;
+    // opacity: .4;
+    border-top: 1px solid $white-dull;
+    color: $white;
+
+    .sell-flipkart {
+
+      span {
+        opacity: 1;
+        font-size: 14px;
+      }
+
+      img {
+        opacity: 1;
+        padding-right: 5px;
+      }
+    }
+
+    .advertise-flipkart {
+      span {
+        font-size: 14px;
+      }
+
+      img {
+        padding-right: 5px;
+      }
+    }
+
+    .gift-flipkart {
+      span {
+        font-size: 14px;
+      }
+      img {
+        padding-right: 5px;
+      }
+    }
+
+    .help-flipkart {
+      span {
+        font-size: 14px;
+      }
+      img {
+        padding-right: 5px;
+      }
+    }
+
+    .copyrights {
+      span {
+        font-size: 14px;
+      }
+      img {
+        padding-right: 5px;
+      }
+    }
+
+    .payment-flipkart {
+      span {
+        font-size: 14px;
+      }
+      img {
+        padding-right: 5px;
+      }
+    }
+  }
+}
