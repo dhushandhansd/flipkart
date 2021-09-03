@@ -47,6 +47,31 @@
     h5 {
       font-size: 14px;
       font-weight: 500;
+
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .topic:hover {
+    color: $phone-blue;
+  }
+
+  .topic:hover > h5 > svg {
+    animation-name: arrow-rotate;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    // transform: rotate(90deg);
+  }
+
+  @keyframes arrow-rotate {
+    0% {
+      transform: rotate(-90deg);
+    }
+    100% {
+      fill: $phone-blue;
+      transform: rotate(90deg);
     }
   }
 }
