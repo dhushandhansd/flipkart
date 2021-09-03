@@ -10,7 +10,7 @@
  - Footer
 
 ## UI Design
-![Flipkart UI](https://dhushandhansd.github.io/flipkart/flipkart-design.png)
+![Flipkart UI](https://github.com/dhushandhansd/flipkart/blob/master/Flipkart-design.png)
 
 ## Pull Requests
 Pull requests are welcomed and incase of an error raise an issue, we are happy to solve it.
