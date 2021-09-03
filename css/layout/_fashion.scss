@@ -55,6 +55,7 @@
             margin: 10px;
             overflow: hidden;
             position: relative;
+            cursor: pointer;
 
             .fashion-image {
                 width: 150px;
@@ -65,9 +66,15 @@
                 object-fit: fill;
             }
 
-            .fashion-image:hover {
-                width: 160px;
-                height: 160px;   
+            .fashion-image img {
+                position: absolute;
+                z-index: 4;
+                transition: 2s ease-in;
+            }
+
+            .fashion-image img:hover {
+                width: 150px;
+                height: 160px;
             }
     
             .fashion-text {
@@ -158,12 +165,14 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        // overflow: scroll;
 
         .elect-content {
             width: 165px;
             height: 90%;
             margin: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
 
             .elect-image {
                 width: 150px;
@@ -171,6 +180,17 @@
                 margin-top: 30px;
                 display: flex;
                 justify-content: center;
+            }
+
+            .elect-image img {
+                position: absolute;
+                z-index: 4;
+                transition: 2s ease-in;
+            }
+
+            .elect-image img:hover {
+                width: 150px;
+                height: 160px;
             }
     
             .elect-text {
@@ -267,6 +287,9 @@
             width: 165px;
             height: 90%;
             margin: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
 
             .toys-image {
                 width: 150px;
@@ -274,6 +297,17 @@
                 margin-top: 30px;
                 display: flex;
                 justify-content: center;
+            }
+
+            .toys-image img {
+                position: absolute;
+                z-index: 4;
+                transition: 2s ease-in;
+            }
+
+            .toys-image img:hover {
+                width: 160px;
+                height: 160px;
             }
     
             .toys-text {

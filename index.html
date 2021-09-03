@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
     <script src="./script/carousel.js" defer></script>
+    <script src="./script/loginModel.js" defer></script>
+    <script src="./script/signinModel.js" defer></script>
     <title>Flipkart - UKSD</title>
   </head>
   <body>
@@ -37,7 +39,7 @@
             />
             <img src="./assets/search-icon.svg" alt="search" />
           </div>
-          <div class="login">Login</div>
+          <div onclick="loginModel()" id="loginBtn" class="login">Login</div>
           <div class="more">
             More
             <svg
@@ -542,6 +544,21 @@
         </div>
       </div>
 
+      <div class="cards-container-small">
+        <div class="card-small">
+          <img src="./assets/cards/card-pay1.jpg" alt="card1" />
+        </div>
+        <div class="card-small">
+          <img src="./assets/cards/card-pay2.jpg" alt="card2" />
+        </div>
+        <div class="card-small">
+          <img src="./assets/cards/card-pay3.jpg" alt="card3" />
+        </div>
+        <div class="card-small">
+          <img src="./assets/cards/card-pay4.jpg" alt="card4" />
+        </div>
+      </div>
+
       <div class="footer-container">
         <div class="footer-header">
           <div class="footer-content">
@@ -636,7 +653,7 @@
         </div>
       </div>
 
-      <div class="loginModel">
+      <div id="loginModelId" class="loginModel">
 
         <div class="login-container">
           <div class="image-container">
@@ -677,7 +694,12 @@
           </div>
         </div>
 
-        <!-- <div class="signin-container">
+        <span onclick="closeModel()" id="closeBtnId" class="closeBtn">✕</span>
+      </div>
+
+      <div id="signinModelId" class="signinModel">
+        
+        <div class="signin-container">
           <div class="signin-image-container">
             <div class="signin-image-text-header">Login</div>
             <div class="signin-image-header-desc">Get access to your Orders, Wishlist and Recommendations</div>
@@ -714,7 +736,7 @@
               <p class="signup-text">New to Flipkart? Create an account</p>
             </div>
           </div>
-        </div> -->
+        </div>
 
         <span class="closeBtn">✕</span>
       </div>
