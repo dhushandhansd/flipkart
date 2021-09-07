@@ -18,6 +18,7 @@
     <script src="./script/carousel.js" defer></script>
     <script src="./script/loginModel.js" defer></script>
     <script src="./script/signinModel.js" defer></script>
+    <script src="./script/dropdown.js" defer></script>
     <title>Flipkart - UKSD</title>
   </head>
   <body>
@@ -40,7 +41,7 @@
             <img src="./assets/search-icon.svg" alt="search" />
           </div>
           <div onclick="loginModel()" id="loginBtn" class="login">Login</div>
-          <div class="more">
+          <div id="moreId" class="more">
             More
             <svg
               width="5"
@@ -55,6 +56,15 @@
                 class="_1zrN4q"
               ></path>
             </svg>
+            <div id="moreDropdown" class="dropdown-more">
+              <ul class="dropdown-list">
+                <li>Notification Preference</li>
+                <li>Sell on Flipkart</li>
+                <li>24x7 Customer Care</li>
+                <li>Advertise</li>
+                <li>Download the App</li>
+              </ul>
+            </div>
           </div>
           <div class="cart">
             <img src="./assets/cart-img.svg" alt="cart" />
@@ -82,7 +92,7 @@
             <h5>Mobiles</h5>
           </div>
         </div>
-        <div class="topics-content">
+        <div id="fashionId" class="topics-content">
           <div class="topic">
             <img src="./assets/topics/fashion.png" alt="fashion" />
             <h5>
@@ -100,10 +110,50 @@
                   class="_1zrN4q"
                 ></path>
               </svg>
+              <div id="dropdownFashionId" class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="/">Men's Top Wear</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Men's Bottom Wear</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Women's Western</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Men's Footwear</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Women's Footwear</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Watches and Accessories</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Kids</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Essentials</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Winter</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                </ul>
+              </div>
             </h5>
           </div>
         </div>
-        <div class="topics-content">
+        <div id="electId" class="topics-content">
           <div class="topic">
             <img src="./assets/topics/electronics.png" alt="electronics" />
             <h5>
@@ -121,10 +171,54 @@
                   class="_1zrN4q"
                 ></path>
               </svg>
+              <div id="dropdownElectId" class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="/">Audio</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Cameras & Accessories</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Computer Peripherals</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Gaming</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Health & Personal Care</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Laptop Accessories</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Laptop and Desktop</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Powerbank</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Smart Home automation</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Smart Wearables</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                </ul>
+              </div>
             </h5>
           </div>
         </div>
-        <div class="topics-content topic-content-small">
+        <div id="homeId" class="topics-content topic-content-small">
           <div class="topic">
             <img src="./assets/topics/home.jpg" alt="home" />
             <h5>
@@ -142,10 +236,58 @@
                   class="_1zrN4q"
                 ></path>
               </svg>
+              <div id="dropdownHomeId" class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="/">Home Furnishings</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Living Room</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Kitchen & Dining</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Bedroom</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Home Decor</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Tools & Utility</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Lightings & Electricals</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Space Saving</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Cleaning & Bath</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Kids Furniture</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Pets & Gardening</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                </ul>
+              </div>
             </h5>
           </div>
         </div>
-        <div class="topics-content">
+        <div id="appId" class="topics-content">
           <div class="topic">
             <img src="./assets/topics/appliances.png" alt="appliances" />
             <h5>
@@ -163,6 +305,50 @@
                   class="_1zrN4q"
                 ></path>
               </svg>
+              <div id="dropdownAppId" class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="/">Televisions</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Washing Machines</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Air Conditioners</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Refrigerators</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Kitchen Appliances</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Home Appliances</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Seasonal Appliances</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Premium Appliances</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Buying Guides</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Flipkart Benefits</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                </ul>
+              </div>
             </h5>
           </div>
         </div>
@@ -172,7 +358,7 @@
             <h5>Travel</h5>
           </div>
         </div>
-        <div class="topics-content topic-content-large">
+        <div id="toysId" class="topics-content topic-content-large">
           <div class="topic topic-large">
             <img src="./assets/topics/toys.png" alt="more" />
             <h5>
@@ -190,6 +376,50 @@
                   class="_1zrN4q"
                 ></path>
               </svg>
+              <div id="dropdownToysId" class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="/">Beauty & Personal Care</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Men's Grooming</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Food & Drinks</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Nutrition & Health Care</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Baby Care</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Toy's & School Supplies</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Sports & Fitness</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Books & Music</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Stationary & Office Supplies</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                  <li>
+                    <a href="/">Auto Accessories</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#2874f0"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                  </li>
+                </ul>
+              </div>
             </h5>
           </div>
         </div>

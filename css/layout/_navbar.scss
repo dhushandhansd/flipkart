@@ -109,6 +109,37 @@
             border-radius: 2px;
             cursor: pointer;
 
+            .dropdown-more {
+                position: fixed;
+                top: 55px;
+                width: 200px;
+                background-color: $white;
+                color: $black;
+                box-shadow: 0 3px 10px $border-color;
+                display: none;
+
+                .dropdown-list {
+                    list-style-type: none;
+                    list-style: none;
+
+                    li {
+                        font-size: 14px;
+                        color: $black;
+                        padding: 15px;
+                        text-align: start;
+                        border-bottom: .2px solid $border-color;
+                    }
+
+                    li:hover {
+                        background-color: $dropdown-bg;
+                    }
+                }
+            }   
+
+            .moreDrop-active {
+                display: flex;
+            }
+
             svg {
                 transform: rotate(-90deg);
                 padding: 5px;
